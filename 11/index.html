@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>KNIT - Creative Personal Portfolio Template</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Knit creative personal portfolio template">
+	<meta name="keywords" content="knit, creative, personal, portfolio, template">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->   
+	<link href="img/favicon.png" rel="shortcut icon"/>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/demo.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<!-- Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<div class="demo-header">
+		<div class="container">
+			<h2>KNIT<span>v1.1</span></h2>
+			<p>Creative Personal Portfolio Template</p>
+		</div>
+	</div>
+
+
+	<div class="demo-section spad">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-lg-4 col-md-6">
+					<a href="index-image.html" class="preview-item">
+						<img src="img/1.jpg" alt="">
+						<span class="perview-info">Default Style</span>
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<a href="index-minimal.html" class="preview-item">
+						<img src="img/3.jpg" alt="">
+						<span class="perview-info">Minimal Style</span>
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<a href="index-particles.html" class="preview-item">
+						<img src="img/2.jpg" alt="">
+						<span class="perview-info">Particles Style</span>
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<a href="index-bubble.html" class="preview-item">
+						<img src="img/6.jpg" alt="">
+						<span class="perview-info">Bubble Style <i class="new">New</i></span>
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<a href="single-work.html" class="preview-item">
+						<img src="img/4.jpg" alt="">
+						<span class="perview-info">Single Work</span>
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="preview-item">
+						<img src="img/5.jpg" alt="">
+						<span class="perview-info">Coming Soon</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!--====== Jquery & Javascripts files  ======-->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script>
+		$(window).on('load', function() { 
+			/*------------------
+				Preloder
+			--------------------*/
+			$(".loader").fadeOut(); 
+			$("#preloder").delay(400).fadeOut("slow");
+
+		});
+	</script>
+
+</body>
+</html>

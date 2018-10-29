@@ -1,0 +1,1251 @@
+/*********************************************************************************************
+Project:      oyFolio - Responsive HTML Portfolio Template
+Version:      1.1
+Last change:  19/06/2017
+
+Style Index
+
+1.  Color Codes
+2.  Defaults & Reset & Global elements
+3.  Header
+4.  Nav
+5.  Features
+6.  My Skills
+7.  My Work
+8.  Portfolio Gallery
+9.  Contact us
+10. Google Map
+11. Footer
+12. Scroll To Top
+13. Loading Screen
+14. ***** Responsive *****
+    1. Large Screen
+    2. Medium Screen
+    3. Small Screen
+    4. Screen Width 881px
+    5. Extra Small Screen
+    6. Screen Width 500px
+    7. Screen Width 300px
+    8. Screen Width 265px
+*********************************************************************************************/
+
+/*------------------------------------------------------------------------------------------*/
+/* 1. Color Codes */
+/*------------------------------------------------------------------------------------------
+
+***** Background Color *****
+
+[ Nav,
+My Skills,
+Contact us,
+Footer ]       ===> #26292e
+
+[ Features,
+My Work,
+Google Map ]   ===> #2f3238
+
+
+***** Text Color *****
+
+[ Header ]                           ===> #eee
+[ Nav Logo ]                         ===> #ccc
+[ Nav Links,
+Section Headings h2 ]                ===> #fff
+[ Section Description Headings h3 ]  ===> #aaa
+[ Features Headings h4,
+Skills Headings h4 ]                 ===> #999
+[ Features Description p ]           ===> #888
+[ Buttons Color ]                    ===> #ccc
+[ Footer Social Media Icons,
+Footer Copyright ]                   ===> #555
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 2. Defaults & Reset & Global elements */
+/*------------------------------------------------------------------------------------------*/
+* {
+    box-sizing: border-box
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+a {
+    text-decoration: none
+}
+
+.clearfix {
+    clear: both
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto
+}
+
+#Scroll-To-Top,
+.get-in-touch form input[type=submit],
+.window-background i,
+a,
+i:before,
+li,
+.gallery-navigate span {
+    -webkit-transition: .3s all ease-in-out;
+    transition: .3s all ease-in-out
+}
+
+::-webkit-scrollbar {
+    display: none
+}
+
+body {
+    background-color: #3b3a46;
+    font-family: 'Lato', 'Raleway', sans-serif
+}
+
+p:first-letter {
+    text-transform: uppercase
+}
+
+.loading-screen .my-name span:first-of-type,
+.window-background-content .window-background-text span:first-of-type,
+nav,
+.mobile-menu,
+.features h2,
+.get-in-touch h2,
+.my-skills h2,
+.my-work h2,
+.features .features-boxs div h4,
+.my-skills .my-skills-boxs div h4 {
+    font-family: 'Raleway', 'Lato', sans-serif
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* 3. Header */
+/*------------------------------------------------------------------------------------------*/
+.window-background {
+    background: url(../images/dark-wallpapers-hd.jpg) no-repeat center center fixed;
+    background-size: cover
+}
+
+.window-background .window-background-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(38, 41, 46, .85);
+    text-align: center;
+    color: #fff;
+    outline: 0
+}
+
+.window-background .window-background-content .window-background-text {
+    min-height: 136px;
+    color: #eee;
+    font-size: 22px;
+    line-height: 35px;
+    margin: auto
+}
+
+.window-background-content .window-background-text span {
+    display: inline-block
+}
+
+.window-background-content .window-background-text span:last-of-type {
+    color: #bbb;
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 10px
+}
+
+.window-background i {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -15px;
+    height: 30px;
+    width: 30px;
+    background-color: #26292e;
+    color: #5cbeff;
+    text-align: center;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 700;
+    border-radius: 7px;
+    cursor: pointer;
+    opacity: .7;
+    -webkit-animation: vibration .6s infinite ease-in-out;
+    animation: vibration .6s infinite ease-in-out
+}
+
+.window-background i:hover {
+    opacity: 1
+}
+
+@-webkit-keyframes vibration {
+    0%,
+    100% {
+        bottom: 15px
+    }
+    50% {
+        bottom: 8px
+    }
+}
+
+@keyframes vibration {
+    0%,
+    100% {
+        bottom: 15px
+    }
+    50% {
+        bottom: 8px
+    }
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* 4. Nav */
+/*------------------------------------------------------------------------------------------*/
+nav {
+    min-height: 60px;
+    background-color: #26292e
+}
+
+nav .nav-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+nav .logo a {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 40px;
+    overflow: hidden
+}
+
+nav .logo img {
+    height: 40px;
+    width: 40px
+}
+
+nav .logo h1 {
+    display: inline-block;
+    color: #ccc;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin: 0 8px;
+    -webkit-transition: .2s all ease-in-out;
+    transition: .2s all ease-in-out
+}
+
+nav .logo span {
+    display: block;
+    line-height: 40px
+}
+
+nav .logo a:hover h1 {
+    margin-top: -40px
+}
+
+nav ul a.active,
+nav ul a:hover {
+    color: #328dc9
+}
+
+nav ul li {
+    float: left;
+    margin-left: 40px
+}
+
+nav ul li:first-of-type {
+    margin-left: 0
+}
+
+nav ul a {
+    display: block;
+    height: 60px;
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 60px;
+    color: #fff
+}
+
+nav .menu-button {
+    display: none
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* 5. Features */
+/*------------------------------------------------------------------------------------------*/
+.features {
+    position: relative;
+    background-color: #2F3238;
+    text-align: center;
+    padding: 80px 0
+}
+
+.mobile-menu {
+    position: absolute;
+    right: -160px;
+    height: 100%;
+    width: 150px;
+    z-index: 4000;
+    background-color: #30303d;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    box-shadow: -2px 2px 5px #222
+}
+
+.mobile-menu li a {
+    display: block;
+    height: 40px;
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 40px;
+    color: #fff;
+    border-bottom: 1px solid #000
+}
+
+.mobile-menu li a:hover {
+    background-color: #38384b
+}
+
+.mobile-menu li a:active {
+    background-color: #3e3e58
+}
+
+.features h2,
+.get-in-touch h2,
+.my-skills h2,
+.my-work h2 {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 44px;
+    font-weight: 400;
+    margin: 0 15px 10px
+}
+
+.features h3,
+.get-in-touch h3,
+.my-skills h3,
+.my-skills strong,
+.my-work h3 {
+    color: #aaa;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 15px
+}
+
+.features .features-boxs {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    margin-bottom: 20px
+}
+
+.features .features-boxs div {
+    max-width: 200px;
+    margin: 10px
+}
+
+.features .features-boxs div i {
+    color: #328dc9;
+    font-size: 50px
+}
+
+.features .features-boxs div:first-of-type i {
+    font-size: 38px;
+    line-height: 50px
+}
+
+.features .features-boxs div:last-of-type i {
+    font-size: 40px;
+    line-height: 50px;
+    -webkit-transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg);
+    transform: rotate(-50deg)
+}
+
+.features .features-boxs div h4,
+.my-skills .my-skills-boxs div h4 {
+    color: #999;
+    margin-top: 10px
+}
+
+.features .features-boxs div p {
+    color: #888;
+    font-size: 15px;
+    margin-bottom: 0
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* 6. My Skills */
+/*------------------------------------------------------------------------------------------*/
+.my-skills {
+    background-color: #26292e;
+    text-align: center;
+    padding: 100px 0 80px
+}
+
+.my-skills .my-skills-boxs {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 50px
+}
+
+.my-skills .my-skills-boxs div {
+    position: relative;
+    margin: 20px
+}
+
+.my-skills .my-skills-boxs div strong {
+    position: absolute;
+    top: 27px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.my-skills .my-skills-boxs div strong i {
+    font-style: normal;
+    margin-left: 2px
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* 7. My Work */
+/*------------------------------------------------------------------------------------------*/
+.my-work {
+    background-color: #2F3238;
+    text-align: center;
+    padding: 80px 0 100px
+}
+
+.my-work .type-of-work {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    cursor: default
+}
+
+.my-work .type-of-work li {
+    display: inline-block;
+    background-color: #26292e;
+    color: #ccc;
+    margin: 10px 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 2px solid #343333;
+    box-shadow: 0 0 3px 0 #000
+}
+
+.my-work .type-of-work li.active {
+    background-color: #2e7bad;
+    color: #fff;
+    box-shadow: 0 0 3px 0 #226590
+}
+
+.my-work .type-of-work li:hover {
+    background-color: #328dc9;
+    color: #fff;
+    box-shadow: 0 0 3px 0 #3990c8
+}
+
+.my-work .my-work-filtering {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 auto
+}
+
+.my-work .my-work-filtering .mix {
+    margin: 3px;
+    overflow: hidden
+}
+
+.my-work .my-work-filtering .mix h4,
+.my-work .my-work-filtering .mix p,
+.my-work .my-work-filtering .mix a,
+.my-work .my-work-filtering .hidden {
+    display: none
+}
+
+.my-work .my-work-filtering .mix,
+.my-work .my-work-filtering .mix img {
+    position: relative
+}
+
+.my-work .my-work-filtering .mix .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(60,60,60,.7);
+    color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.my-work .my-work-filtering .mix:hover img {
+    -webkit-transform: scale(1.15, 1.15) rotate(-5deg);
+    -ms-transform: scale(1.15, 1.15) rotate(-5deg);
+    transform: scale(1.15, 1.15) rotate(-5deg)
+}
+
+.my-work .my-work-filtering .mix img {
+    display: block;
+    height: 200px;
+    width: 250px;
+    opacity: .9;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out
+}
+
+.my-work .my-work-filtering .mix .overlay {
+    background-color: rgba(50, 141, 201, .8);
+    cursor: pointer;
+    text-shadow: 0 0 10px #333
+}
+
+.my-work .my-work-filtering .mix .overlay i {
+    font-size: 40px
+}
+
+.my-work .show-more {
+    display: block;
+    max-width: 120px;
+    background-color: #26292e;
+    color: #ccc;
+    margin: 40px auto 0;
+    padding: 10px;
+    border: 2px solid #343333;
+    outline: 0;
+    box-shadow: 0 0 3px 0 #000
+}
+
+.my-work .show-more:hover {
+    background-color: #328dc9;
+    color: #fff;
+    box-shadow: 0 0 3px 0 #3990c8
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* 8. Portfolio Gallery */
+/*------------------------------------------------------------------------------------------*/
+.portfolio-lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 8000;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(80, 80, 80, 0.88);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: none;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.portfolio-lightbox i {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    height: 35px;
+    width: 37px;
+    background-color: #2f3238;
+    color: #328dc9;
+    font-size: 22px;
+    padding-bottom: 2px;
+    border: 3px solid #434548;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 1px #222;
+    cursor: pointer;
+    -webkit-transition: .3s all ease-in-out;
+    transition: .3s all ease-in-out;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.portfolio-lightbox i:before {
+    -webkit-transition: none;
+    transition: none
+}
+
+.portfolio-lightbox i:hover {
+    color: #ff2b42;
+    box-shadow: 0 0 5px 2px #222
+}
+
+.portfolio-lightbox .gallery-image {
+    position: relative;
+    width: 90%;
+    max-width: 700px;
+    max-height: 700px;
+    background-color: #434548;
+    color: #aaa;
+    padding: 10px;
+    margin-bottom: -20px;
+    border: 4px solid #494b50;
+    border-radius: 4px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, .6)
+}
+
+.portfolio-lightbox .gallery-image i {
+    top: 17px;
+    right: 18px;
+    height: 25px;
+    width: 27px;
+    font-size: 16px;
+    padding-bottom: 0;
+    display: none
+}
+
+.portfolio-lightbox .gallery-image img {
+    width: 100%;
+    max-height: 350px
+}
+
+.portfolio-lightbox .gallery-image h4 {
+    color: #bbb;
+    text-transform: capitalize;
+    margin: 5px 0
+}
+
+.portfolio-lightbox .gallery-image p {
+    max-height: 170px;
+    color: #999;
+    font-size: 14px;
+    padding: 0 6px;
+    margin-top: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.portfolio-lightbox .gallery-image .gallery-navigate {
+    float: left;
+    margin: 0 10px;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.portfolio-lightbox .gallery-image .gallery-navigate span {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: #2f3238;
+    cursor: pointer
+}
+
+.portfolio-lightbox .gallery-image .gallery-navigate span:hover {
+    background-color: #328dc9
+}
+
+.portfolio-lightbox .gallery-image .gallery-navigate .prev {
+    border-radius: 50% 0 0 50%
+}
+
+.portfolio-lightbox .gallery-image .gallery-navigate .next {
+    border-radius: 0 50% 50% 0
+}
+
+.portfolio-lightbox .gallery-image .preview-link {
+    float: right;
+    display: inline-block;
+    background-color: #2f3238;
+    color: #aaa;
+    font-size: 14px;
+    padding: 4px 8px;
+    margin: 0 10px;
+    border-radius: 4px
+}
+
+.portfolio-lightbox .gallery-image .preview-link:hover {
+    background-color: #328dc9;
+    color: #ddd
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* 9. Contact us */
+/*------------------------------------------------------------------------------------------*/
+.get-in-touch {
+    background-color: #26292e;
+    text-align: center;
+    padding: 80px 0
+}
+
+.get-in-touch form {
+    position: relative;
+    width: 700px;
+    margin: 80px auto 0
+}
+
+.get-in-touch form input:not([type="submit"]),
+.get-in-touch form textarea {
+    display: block;
+    width: 100%;
+    background-color: #2f3238;
+    color: #aaa;
+    padding: 10px;
+    border: 1px solid #26292e
+}
+
+.get-in-touch form textarea {
+    height: 200px;
+    max-height: 400px;
+    resize: vertical
+}
+
+.get-in-touch form input:focus,
+.get-in-touch form textarea:focus {
+    background-color: #313745;
+    outline: 0
+}
+
+.get-in-touch form input[type=submit] {
+    background-color: #26292e;
+    color: #ccc;
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px solid #343333;
+    box-shadow: 0 0 3px 0 #000
+}
+
+.get-in-touch form input[type=submit]:hover {
+    background-color: #328dc9;
+    color: #fff;
+    box-shadow: 0 0 3px 0 #3990c8
+}
+
+.get-in-touch form input[type=submit]:focus {
+    outline: 0
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* 10. Google Map */
+/*------------------------------------------------------------------------------------------*/
+.contact-map {
+    height: 340px;
+    width: 100%;
+    opacity: .8
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* 11. Footer */
+/*------------------------------------------------------------------------------------------*/
+.footer {
+    background-color: #26292e;
+    border-top: 4px solid #328dc9;
+}
+
+.social-media {
+    text-align: center;
+    padding: 80px 20px;
+    cursor: default
+}
+
+.social-media a {
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    background-color: #2f3238;
+    color: #555;
+    margin: 5px;
+    border: 1px solid rgba(68, 68, 68, .5);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .3)
+}
+
+.social-media br {
+    display: none
+}
+
+.social-media a:hover {
+    color: #888
+}
+
+.social-media a i {
+    font-size: 32px;
+    line-height: 70px
+}
+
+.social-media a i:before {
+    -webkit-transition: none;
+    transition: none
+}
+
+.copyright {
+    color: #555;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 20px 0;
+    border-top: 1px solid #2f3238
+}
+
+.copyright span {
+    color: #328dc9
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* 12. Scroll To Top */
+/*------------------------------------------------------------------------------------------*/
+.Scroll-To-Top {
+    position: fixed;
+    left: -60px;
+    bottom: 13px;
+    z-index: 6000;
+    height: 50px;
+    width: 50px;
+    background-color: #328dc9;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    line-height: 46px;
+    cursor: pointer;
+    opacity: .7
+}
+
+.Scroll-To-Top:hover {
+    opacity: 1
+}
+
+.Scroll-To-Top:active {
+    opacity: .9
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* 13. Loading Screen */
+/*------------------------------------------------------------------------------------------*/
+.loading-screen {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 8000;
+    background-color: #09304a;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.loading-screen .loading {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: #00a2ff;
+    border: 10px solid #0961ad;
+    border-radius: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.loading-screen .loading:after {
+    content: '';
+    background: trasparent;
+    width: 140%;
+    height: 140%;
+    position: absolute;
+    border-radius: 100%;
+    top: -20%;
+    left: -20%;
+    opacity: .7;
+    box-shadow: rgba(255, 255, 255, .6)-4px -5px 3px -3px;
+    -webkit-animation: rotate 2s infinite linear;
+    animation: rotate 2s infinite linear
+}
+
+.loading-screen .loading img {
+    width: 90%;
+    border-radius: 50%
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotateZ(0deg);
+        transform: rotateZ(0deg)
+    }
+    100% {
+        -webkit-transform: rotateZ(360deg);
+        transform: rotateZ(360deg)
+    }
+}
+
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotateZ(0deg);
+        transform: rotateZ(0deg)
+    }
+    100% {
+        -webkit-transform: rotateZ(360deg);
+        transform: rotateZ(360deg)
+    }
+}
+
+.loading-screen .my-name {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 16px
+}
+
+.loading-screen .my-name span:last-of-type {
+    color: #cdcdcd;
+    font-size: 12px;
+    font-style: italic
+}
+
+
+/*==========================================================================================*/
+/* 14. Responsive */
+/*==========================================================================================*/
+
+/*------------------------------------------------------------------------------------------*/
+/* 1. Large Screen */
+/*------------------------------------------------------------------------------------------*/
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px
+    }
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 2. Medium Screen */
+/*------------------------------------------------------------------------------------------*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        width: 970px
+    }
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 3. Small Screen */
+/*------------------------------------------------------------------------------------------*/
+@media (max-width: 991px) {
+    .container {
+        width: 750px
+    }
+    
+    nav ul {
+        display: none
+    }
+    
+    nav .menu-button {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: 60px;
+        color: #eee;
+        font-size: 25px
+    }
+    
+    nav .menu-button i {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: 28px;
+        width: 30px;
+        background-color: #34343b;
+        border: 1px solid #444;
+        border-radius: 5px;
+        cursor: pointer
+    }
+    
+    nav .menu-button .fa-times {
+        height: 27px;
+        display: none
+    }
+    
+    nav .menu-button i:hover {
+        color: #ccc
+    }
+    
+    .features {
+        overflow-x: hidden
+    }
+    
+    .features .features-boxs div {
+        max-width: 260px
+    }
+    
+    .portfolio-lightbox .gallery-image img {
+        max-height: 300px
+    }
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 4. Screen Width 881px */
+/*------------------------------------------------------------------------------------------*/
+@media (max-width: 881px) {
+    .features .features-boxs div {
+        width: 45%;
+        max-width: none;
+        margin: 20px 15px
+    }
+    
+    .features .features-boxs div p {
+        max-width: 200px;
+        margin-left: auto;
+        margin-right: auto
+    }
+    
+    .portfolio-lightbox > i {
+        display: none
+    }
+    
+    .portfolio-lightbox .gallery-image i {
+        display: flex
+    }
+    
+    .portfolio-lightbox .gallery-image {
+        margin-bottom: 0
+    }
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 5. Extra Small Screen */
+/*------------------------------------------------------------------------------------------*/
+@media (max-width: 767px) {
+    .container {
+        width: auto;
+        margin: 0
+    }
+    
+    .window-background .window-background-content .window-background-text {
+        font-size: 20px;
+        padding: 0 15px
+    }
+    
+    .window-background-content .window-background-text span:last-of-type br {
+        display: none
+    }
+    
+    nav .logo {
+        margin: 0 10px 0 20px
+    }
+    
+    nav .menu-button {
+        margin: 0 20px 0 10px
+    }
+    
+    .features .features-boxs div {
+        width: 100%;
+        max-width: none
+    }
+    
+    .features .features-boxs div p {
+        max-width: 300px
+    }
+    
+    .my-skills .my-skills-boxs div {
+        width: 40%
+    }
+    
+    .portfolio-lightbox .gallery-image {
+        width: 90%;
+        padding: 5px
+    }
+    
+    .portfolio-lightbox .gallery-image img {
+        max-height: 250px
+    }
+    
+    .get-in-touch form {
+        width: 90%
+    }
+    
+    .get-in-touch form input[type=submit] {
+        width: 100%
+    }
+    
+    .contact-map {
+        height: 250px
+    }
+    
+    .social-media br {
+        display: block
+    }
+    
+    .copyright span {
+        display: block;
+        margin-top: 10px
+    }
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 6. Screen Width 500px */
+/*------------------------------------------------------------------------------------------*/
+@media (max-width: 500px) {
+    .my-skills .my-skills-boxs div {
+        width: 100%
+    }
+    
+    .portfolio-lightbox .gallery-image img {
+        max-height: 180px
+    }
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 7. Screen Width 300px */
+/*------------------------------------------------------------------------------------------*/
+@media (max-width: 300px) {
+    .social-media br {
+        display: none
+    }
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 8. Screen Width 265px */
+/*------------------------------------------------------------------------------------------*/
+@media (max-width: 265px) {
+    nav .nav-content {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding-top: 15px
+    }
+}

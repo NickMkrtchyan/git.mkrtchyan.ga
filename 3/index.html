@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+    
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>oyFolio - Responsive HTML Portfolio Template</title>
+        <link rel="icon" href="images/oyFolio-Icon.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Raleway">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    
+    
+    <body>
+        
+        <!-- Start Loading Screen -->
+        <div class="loading-screen">
+            <div class="loading">
+                <img src="images/oyFolio-Logo.png" alt="">
+            </div>
+            <div class="my-name">
+                <span>oyFolio</span><br>
+                <span>responsive HTML portfolio template</span>
+            </div>
+        </div>
+        <!-- End Loading Screen -->
+        
+        <!-- Start Window Background -->
+        <div id="home" class="window-background">
+            <div class="window-background-content">
+                <div class="container">
+                    <div class="window-background-text">
+                        <span></span><br>
+                        <span></span>
+                    </div>
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <!-- End Window Background -->
+        
+        <!-- Start Navigation Bar -->
+        <nav>
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/oyFolio-Logo.png" alt="logo">
+                            <h1>
+                                <span>oyFolio</span>
+                                <span>oyFolio</span>
+                            </h1>
+                        </a>
+                    </div>
+                    <div class="menu-button">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </div>
+                    <ul>
+                        <li><a href="#" class="home-button active" data-value="home">home</a></li>
+                        <li><a href="#" class="features-button" data-value="features">features</a></li>
+                        <li><a href="#" class="my-skills-button" data-value="my-skills">my skills</a></li>
+                        <li><a href="#" class="my-work-button" data-value="my-work">my work</a></li>
+                        <li><a href="#" class="contact-button" data-value="contact">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navigation Bar -->
+        
+        <!-- Start Features -->
+        <div id="features" class="features">
+            
+            <!-- Start Mobile Menu -->
+            <ul class="mobile-menu">
+                <li><a href="#" class="home-button active" data-value="home">home</a></li>
+                <li><a href="#" class="features-button" data-value="features">features</a></li>
+                <li><a href="#" class="my-skills-button" data-value="my-skills">my skills</a></li>
+                <li><a href="#" class="my-work-button" data-value="my-work">my work</a></li>
+                <li><a href="#" class="contact-button" data-value="contact">contact</a></li>
+            </ul>
+            <!-- End Mobile Menu -->
+            
+            <div class="container">
+                <h2>features</h2>
+                <h3>Contrary to popular belief, Lorem Ipsum is not simply random text.</h3>
+                <div class="features-boxs">
+                    <div>
+                        <i class="fa fa-desktop" aria-hidden="true"></i>
+                        <h4>Web Design</h4>
+                        <p>totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-code" aria-hidden="true"></i>
+                        <h4>Clean &amp; Valid</h4>
+                        <p>totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-mobile" aria-hidden="true"></i>
+                        <h4>Fully Responsive</h4>
+                        <p>totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-space-shuttle" aria-hidden="true"></i>
+                        <h4>Fast Loading</h4>
+                        <p>totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Features -->
+        
+        <!-- Start My Skills -->
+        <div id="my-skills" class="my-skills">
+            <div class="container">
+                <h2>my skills</h2>
+                <h3>Lorem Ipsum is not simply random text!</h3>
+                <div class="my-skills-boxs">
+                    <div class="webDesign-circle-progress">
+                        <strong><i>0 &#37;</i></strong>
+                        <h4>web design</h4>
+                    </div>
+                    <div class="graphicsDesign-circle-progress">
+                        <strong><i>0 &#37;</i></strong>
+                        <h4>graphics</h4>
+                    </div>
+                    <div class="phpDeveloper-circle-progress">
+                        <strong><i>0 &#37;</i></strong>
+                        <h4>PHP</h4>
+                    </div>
+                    <div class="javaScript-circle-progress">
+                        <strong><i>0 &#37;</i></strong>
+                        <h4>java script</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End My Skills -->
+        
+        <!-- Start my work -->
+        <div id="my-work" class="my-work">
+            <div class="container">
+                <h2>my work</h2>
+                <h3>Lorem Ipsum is not simply random text.</h3>
+                <ul class="type-of-work">
+                    <li class="active">all</li>
+                    <li data-value="web">web</li>
+                    <li data-value="apps">apps</li>
+                    <li data-value="graphic">graphic</li>
+                </ul>
+                <div id="my-work-filtering" class="my-work-filtering da-thumbs">
+                    <div class="mix web">
+                        <img src="images/web/web-1.jpg" alt="web-1">
+                        <h4>project title 1</h4>
+                        <p>first lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <a href="#" target="_blank">Preview</a>
+                        <div class="overlay">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="mix apps">
+                        <img src="images/apps/apps-1.jpg" alt="apps-1">
+                        <h4>project title 2</h4>
+                        <p>second lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <a href="#" target="_blank">Preview</a>
+                        <div class="overlay">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="mix web">
+                        <img src="images/web/web-2.jpg" alt="web-2">
+                        <h4>project title 3</h4>
+                        <p>third lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <a href="#" target="_blank">Preview</a>
+                        <div class="overlay">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="mix graphic">
+                        <img src="images/graphic/graphic-1.jpg" alt="graphic-1">
+                        <h4>project title 4</h4>
+                        <p>fourth lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <a href="#" target="_blank">Preview</a>
+                        <div class="overlay">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="mix web">
+                        <img src="images/web/web-3.jpg" alt="web-3">
+                        <h4>project title 5</h4>
+                        <p>fifth lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <a href="#" target="_blank">Preview</a>
+                        <div class="overlay">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="mix apps">
+                        <img src="images/apps/apps-2.jpg" alt="apps-2">
+                        <h4>project title 6</h4>
+                        <p>sixth lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <a href="#" target="_blank">Preview</a>
+                        <div class="overlay">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="mix web">
+                        <img src="images/web/web-4.jpg" alt="web-4">
+                        <h4>project title 7</h4>
+                        <p>seventh lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <a href="#" target="_blank">Preview</a>
+                        <div class="overlay">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="mix graphic">
+                        <img src="images/graphic/graphic-2.jpg" alt="graphic-2">
+                        <h4>project title 8</h4>
+                        <p>eighth lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <a href="#" target="_blank">Preview</a>
+                        <div class="overlay">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="mix web">
+                        <img src="images/web/web-5.jpg" alt="web-5">
+                        <h4>project title 9</h4>
+                        <p>ninth lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <a href="#" target="_blank">Preview</a>
+                        <div class="overlay">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="mix apps">
+                        <img src="images/apps/apps-3.jpg" alt="apps-3">
+                        <h4>project title 10</h4>
+                        <p>tenth lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <a href="#" target="_blank">Preview</a>
+                        <div class="overlay">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="mix web">
+                        <img src="images/web/web-6.png" alt="web-6">
+                        <h4>project title 11</h4>
+                        <p>eleventh lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <a href="#" target="_blank">Preview</a>
+                        <div class="overlay">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="mix apps">
+                        <img src="images/apps/apps-4.png" alt="apps-4">
+                        <h4>project title 12</h4>
+                        <p>twelfth lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <a href="#" target="_blank">Preview</a>
+                        <div class="overlay">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="mix apps">
+                        <img src="images/apps/apps-5.jpg" alt="apps-5">
+                        <h4>project title 13</h4>
+                        <p>thirteenth lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <a href="#" target="_blank">Preview</a>
+                        <div class="overlay">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="mix web">
+                        <img src="images/web/web-7.jpg" alt="web-7">
+                        <h4>project title 14</h4>
+                        <p>fourteenth lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <a href="#" target="_blank">Preview</a>
+                        <div class="overlay">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="mix graphic">
+                        <img src="images/graphic/graphic-3.jpg" alt="graphic-3">
+                        <h4>project title 15</h4>
+                        <p>fifteenth lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <a href="#" target="_blank">Preview</a>
+                        <div class="overlay">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="mix apps">
+                        <img src="images/apps/apps-6.jpg" alt="apps-6">
+                        <h4>project title 16</h4>
+                        <p>sixteenth lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <a href="#" target="_blank">Preview</a>
+                        <div class="overlay">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="mix web">
+                        <img src="images/web/web-8.jpg" alt="web-8">
+                        <h4>project title 17</h4>
+                        <p>seventeenth lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <a href="#" target="_blank">Preview</a>
+                        <div class="overlay">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="mix graphic">
+                        <img src="images/graphic/graphic-4.jpg" alt="graphic-4">
+                        <h4>project title 18</h4>
+                        <p>eighteenth lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <a href="#" target="_blank">Preview</a>
+                        <div class="overlay">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="mix apps">
+                        <img src="images/apps/apps-7.jpg" alt="apps-7">
+                        <h4>project title 19</h4>
+                        <p>nineteenth lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <a href="#" target="_blank">Preview</a>
+                        <div class="overlay">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="mix web">
+                        <img src="images/web/web-9.jpg" alt="web-9">
+                        <h4>project title 20</h4>
+                        <p>twentieth lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <a href="#" target="_blank">Preview</a>
+                        <div class="overlay">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <button class="show-more">Show More</button>
+            </div>
+        </div>
+        <!-- End my work -->
+        
+        <!-- Start Portfolio Gallery -->
+        <div class="portfolio-lightbox">
+            <i class="fa fa-times" aria-hidden="true" title="minimize"></i>
+            <div class="gallery-image">
+                <i class="fa fa-times" aria-hidden="true" title="minimize"></i>
+                <img src="#" alt="">
+                <div class="gallery-text">
+                    <h4>sometext</h4>
+                    <p></p>
+                </div>
+                <div class="gallery-navigate">
+                    <span class="prev" title="Previous"></span>
+                    <span class="next" title="Next"></span>
+                </div>
+                <a class="preview-link" href="#" target="_blank">Preview</a>
+            </div>
+        </div>
+        <!-- End Portfolio Gallery -->
+        
+        <!-- Start Get In Touch -->
+        <div id="contact" class="get-in-touch">
+            <div class="container">
+                <h2>get in touch</h2>
+                <h3>Contrary to popular belief, Lorem Ipsum is not simply random text.</h3>
+                <form id="myContactForm" action="contact_form.php" method="post">
+                    <input type="text" name="name" pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="firstname lastname" required placeholder="Your Name &#42;">
+                    <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="youremail@email.com" required placeholder="Your Email &#42;">
+                    <textarea name="message" required placeholder="Your Message &#42;"></textarea>
+                    <input type="submit" name="submit" value="Send Your Message">
+                </form>
+            </div>
+        </div>
+        <!-- End Get In Touch -->
+        
+        <!-- Start Google Map -->
+        <div id="map" class="contact-map"></div>
+        <!-- End Google Map -->
+        
+        <!-- Start Footer -->
+        <div class="footer">
+            
+            <!-- Start Social Media in Footer -->
+            <div class="social-media">
+                <div class="container">
+                    <a href="#" target="_blank" title="Follow Me On Facebook">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" target="_blank" title="Follow Me On Twitter">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" target="_blank" title="Follow Me On Youtube">
+                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                    </a><br>
+                    <a href="#" target="_blank" title="Follow Me On Linkedin">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" target="_blank" title="Follow Me On Behance">
+                        <i class="fa fa-behance" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" target="_blank" title="Follow Me On Codepen">
+                        <i class="fa fa-codepen" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- End Social Media in Footer -->
+            
+            <div class="copyright">
+                <div class="container">
+                    copyright &copy; 2017 by <span>webrouk</span>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer -->
+        
+        <!-- Scroll To Top Button -->
+        <div id="Scroll-To-Top" class="Scroll-To-Top" title="Back to Top">
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </div>
+        
+        
+        <!-- jQuery Library -->
+        <script src="js/jquery-1.12.0.min.js"></script>
+        <!-- Google Map -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCABUipchxBy5ubGg0ajToD30sX9KhcCBQ"></script>
+        <!-- Typed js Plugin -->
+        <script src="js/typed.min.js"></script>
+        <!-- Circle Progress Plugin -->
+        <script src="js/circle-progress.min.js"></script>
+        <!-- Direction Aware Hover Plugin -->
+        <script src="js/DirectionAwareHover.min.js"></script>
+        <!-- Nice Scroll Plugin -->
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <!-- Website Script File -->
+        <script src="js/script.js"></script>
+    </body>
+    
+</html>
