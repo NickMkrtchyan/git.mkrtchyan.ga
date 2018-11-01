@@ -1,0 +1,1395 @@
+
+/* ----------------------------------------------------------------------------------------
+* Author            : Nababur
+* Author Web        : www.nababur.com
+* Template Name     : Raisa Multipurpose Business Agency
+* File              : Custom Responsive css
+* Version           : 1.0.0
+* ---------------------------------------------------------------------------------------- */
+
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1280px) {
+div#latest-work .owl-stage-outer {
+    margin-left: 51px;
+}
+.latest-work-item figure .work-captions {
+width: 100%;
+    height: 100%;
+}
+
+.latest-work-item figure .blur {
+
+    width: 323px;
+    height: 225px;
+}
+.blog-item figure .blur-blog {
+    /* background-color: rgba(0,0,0,0.65); */
+    height: 242px;
+    width: 290px;
+}
+
+.blog-item figure .blog-static {
+width: 100%;
+    height: 100%;
+}
+
+.blog-item figure .blog-captions {
+width: 100%;
+    height: 100%;
+
+}
+
+.blog-title h4 {
+    font-size: 16px;
+    font-weight: 400;
+}
+.blog-title {
+    margin-top: 111px;
+}
+.specilizing-item figure .blur {
+    height: 244px;
+    width: 291px;
+}
+
+.specilizing-item figure .specilizing-captions {
+width: 100%;
+    height: 100%;
+}
+div.specilizing-item figure .specilizing-captions p {
+    color: #fff;
+    font-size: 16px;
+    text-align: left;
+    line-height: 22px;
+}
+
+.offset-md-1 {
+    margin-left: 3.333%;
+}
+.blog-item figure .blog-captions {
+width: 100%;
+    height: 100%;
+}
+
+div.blog-item figure .blog-captions p {
+    line-height: 22px;
+}
+
+.award-tab-list ul.nav-tabs li.nav-item a.nav-link {
+ 
+    padding: 13px 40px;
+}
+
+.filters ul li {
+
+    margin-right: 22px;
+}
+.portfolio-item figure .portfolio-captions {
+width: 100%;
+    height: 100%;
+}
+div.portfolio-item figure .portfolio-captions p {
+    color: #fff;
+    font-size: 13px;
+    text-align: left;
+    line-height: 21px;
+}
+
+div.portfolio-item figure .portfolio-captions h4 {
+    margin-bottom: 10px;
+}
+.featured-tab-list ul.nav-pills li.nav-item a.nav-link {
+    color: #000000;
+    font-size: 14px;
+}
+.single-post-detail h2 {
+    font-size: 24px;
+
+}
+.have-any-project h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 13px;
+}
+
+
+
+}
+
+
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+div#latest-work .owl-stage-outer {
+    margin-left: 50px;
+}
+div#latest-work .owl-stage-outer {
+    margin-left: 50px;
+}
+.offset-md-1 {
+    margin-left: 36px;
+}
+.home1-author-photo {
+    background: url(../images/home-pro.jpg) no-repeat center center;
+    /* background-size: cover; */
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 49%;
+    background-position: 50% 94px;
+}
+.home3-author-photo {
+    background: url(../images/home-pro3.png) no-repeat center center;
+    /* background-size: cover; */
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 60%;
+    background-position: 100% 64px;
+    background-size: 100% 100%;
+}
+
+.author-hire-resume-btn a.raisa-btn {
+    font-weight: 400;
+    padding:10px 28px
+}
+.author-hire-resume-btn a.raisa-btn-deafult {
+    font-weight: 400;
+    padding: 10px 28px
+}
+.award-tab-list ul.nav-tabs li.nav-item a.nav-link {
+    padding: 13px 41px;
+
+}
+
+.filters ul li {
+
+    margin-right: 18px;
+}
+.follower-area {
+
+    padding: 0;
+
+    padding-bottom: 40px;
+    padding-top: 45px;
+}
+
+.author-info-area3 {
+    padding-top: 110px;
+    padding-bottom: 160px;
+}
+.author-title3 h1 {
+    font-size: 40px;
+    font-weight:600;
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+
+.author-video-section {
+    top: -94px;
+
+}
+.author-title3 p {
+    color: #fff;
+}
+.author-video-section {
+    background-position: 0% 90%;
+}
+.specilizing-item figure .specilizing-captions {
+width: 100%;
+    height: 100%;
+}
+div#latest-work .owl-stage-outer {
+    margin-left: 0;
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+div#latest-work .owl-stage-outer {
+    margin-left: 50px;
+}
+div#latest-work .owl-stage-outer {
+    margin-left: 50px;
+}
+.offset-md-1 {
+    margin-left: 36px;
+}
+.home1-author-photo {
+    background: url(../images/home-pro.jpg) no-repeat center center;
+    /* background-size: cover; */
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 49%;
+    background-position: 50% 94px;
+}
+.home3-author-photo {
+    background: url(../images/home-pro3.png) no-repeat center center;
+    /* background-size: cover; */
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 60%;
+    background-position: 100% 64px;
+    background-size: 100% 100%;
+}
+
+.author-hire-resume-btn a.raisa-btn {
+    font-weight: 400;
+    padding: 10px 15px;
+}
+.author-hire-resume-btn a.raisa-btn-deafult {
+    font-weight: 400;
+    padding: 10px 15px;
+}
+.award-tab-list ul.nav-tabs li.nav-item a.nav-link {
+    padding: 13px 41px;
+
+}
+
+.filters ul li {
+
+    margin-right: 18px;
+}
+
+.author-title3 p {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+.navbar-light .navbar-toggler {
+
+    color: #fab702;
+    border-color: #fab702;
+
+}
+div#latest-work .owl-stage-outer {
+    margin-left: 0;
+}
+
+
+.main-menu ul.navbar-nav li.nav-item a {
+    padding: 10px 15px;
+}
+.specilizing-item figure .specilizing-captions {
+width: 100%;
+    height: 100%;
+
+    padding: 10px;
+}
+
+div.specilizing-item figure .specilizing-captions h4 {
+    margin-bottom: 10px;
+}
+div.specilizing-item figure .specilizing-captions p {
+    color: #fff;
+    font-size: 12px;
+    text-align: left;
+    line-height: 18px;
+}
+
+div.specilizing-item figure .specilizing-captions a {
+
+    font-size: 14px;
+    padding: 10px 22px;
+    font-weight: 500;
+}
+.video_button {
+
+    top: 325px;
+}
+div.latest-work-item figure .work-captions p {
+    color: #fff;
+    font-size: 16px;
+    text-align: left;
+    line-height: 22px;
+}
+.latest-work-item figure .work-captions {
+    z-index: 10;
+    color: #fff;
+    position: absolute;
+width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 28px;
+}
+div.latest-work-item figure .work-captions a {
+
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 35px;
+    font-weight: 500;
+
+}
+div#latest-work .owl-stage-outer {
+    margin-left: 92px;
+}
+.pricing-table {
+    border: 1px solid #E8E8E8;
+    padding: 13px;
+    display: block;
+    padding-top: 55px;
+    padding-bottom: 25px;
+}
+
+.blog-item figure .blog-captions {
+
+width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+div.blog-item figure .blog-captions p {
+    color: #fff;
+    font-size: 15px;
+    text-align: left;
+    line-height: 16px;
+}
+div.blog-item figure .blog-captions h4 {
+    font-size: 17px;
+    font-weight: 500;
+    color: #fab702;
+    text-align: left;
+    margin-bottom: 10px;
+}
+div.blog-item figure .blog-captions a {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 7px 9px;
+    font-weight: 500;
+}
+
+.author-info-area3 {
+    padding-top: 110px;
+    padding-bottom: 260px;
+}
+
+.author-title3 h1 {
+    font-size: 48px;
+    color: #393939;
+}
+.author-title3 p {
+    color: #393939;
+}
+.home3-author-photo {
+    height: 100%;
+    width: 65%;
+    background-position:92% 56px
+}
+
+.my-second-photo {
+    position: absolute;
+    top: 54%;
+    left: -19%;
+}
+.award-tab-list ul.nav-tabs li.nav-item a.nav-link {
+
+    padding: 9px 22px;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+.custom-padding {
+    margin-left: 55px;
+    width: 100% !important;
+    flex: 55%;
+    margin-right: 55px;
+}
+.filters ul li {
+    margin-right: 32px;
+}
+.featured-tab-list ul.nav-pills li.nav-item a.nav-link {
+
+    font-size: 12px;
+
+    padding: 10px 0px;
+
+    border-radius: 3px;
+
+}
+.portfolio-item figure .portfolio-captions {
+    z-index: 10;
+    color: #fff;
+    position: absolute;
+width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 10px;
+}
+div.portfolio-item figure .portfolio-captions h4 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fab702;
+    text-align: left;
+    margin-bottom: 0px;
+}
+div.portfolio-item figure .portfolio-captions p {
+    color: #fff;
+    font-size: 15px;
+    text-align: left;
+    line-height: 22px;
+}
+
+div.portfolio-item figure .portfolio-captions a {
+
+    font-size: 13px;
+    font-weight: 500;
+    padding: 8px 6px;
+    font-weight: 500;
+}
+.single-post-detail h2 {
+    font-size: 18px;
+}
+.comment-area h2, .post-comment-form h2 {
+    padding: 50px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #333333;
+}
+.comment-display h5 {
+    font-size: 13px;
+    margin-bottom: 20px;
+    color: #333333;
+    font-weight: 500;
+}
+
+.sidget-title h2 {
+    font-size: 18px;
+}
+.contact-info .address p, .email p, .phone p {
+    color: #333;
+    font-size: 13px;
+}
+.author-video-section {
+    background-position: 0% 80%;
+}
+div#latest-work .owl-stage-outer {
+    margin-left: 0;
+}
+.blog-title h4 {
+    font-size: 10px;
+}
+.have-any-project h2 {
+    font-size: 16px;
+}
+
+.service-item {
+    border: 1px solid #E8E8E8;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.float-left {
+    float: none !important;
+}
+.float-right {
+    float: none !important;
+}
+.blog-info h5 a {
+    font-size: 14px;
+}
+.custom-padding {
+    margin-left: 55px;
+    max-width: 100% !important;
+    flex: 55%;
+    margin-right: 55px;
+}
+
+.author-hire-resume-btn a.raisa-btn {
+    margin-right: 15px;
+}
+
+.featured-tab-image img {
+    display: block;
+    width: 100%;
+    min-height: auto;
+}
+
+
+
+
+
+
+
+
+
+}
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+#header-banner1 {
+    background: #fff;opacity:1;
+}
+.author-title {
+    padding-left: 10px;
+}
+
+.author-title h1, .author-title3 h1 {
+    color: #fff;
+}
+.author-title p {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+.home1-author-photo {
+    display: none;
+}
+.author-info-area {
+    background: url(../images/home-pro.jpg) no-repeat center center;
+    background-size: cover;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-position: 52% 100%;
+}
+.author-info-area3 {
+    background: url(../images/home-pro3.png) no-repeat center center;
+    background-size: cover;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-position: 75% 100%
+}
+.home3-author-photo {
+
+    display: none;
+}
+.author-title span {
+    color: #393939;
+}
+.specilizing-item figure {
+    margin-bottom: 30px;
+}
+#video-right-static {
+    min-height: 500px;
+}
+
+.author-video-section {
+    background: url(../images/author-vedio.png) no-repeat center center;
+    /* background-size: cover; */
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-position: 0% 90%;
+}
+
+.video_button {
+    position: absolute;
+    right: 0;
+    z-index: 33;
+    top: 280px;
+    left: 0;
+}
+.profilepicture {
+
+    left: 0;
+    right: 0;
+}
+.modal.show .modal-dialog {
+    margin-top: 60%;
+}
+div#latest-work .owl-stage-outer {
+    margin-left: 0px;
+}
+.no-padding-left {
+    padding-left: 15px;
+}
+.latest-work-item figure .blur {
+    height: 250px;
+    width: 360px;
+
+}
+
+.latest-work-item figure .work-captions {
+width: 100%;
+    height: 100%;
+
+}
+.blog-item figure {
+    margin-bottom: 30px;
+}
+.custom-w {
+    max-width: 100% !important;
+    margin-bottom: 30px;
+    flex: 100%;
+}
+.have-any-project h2 {
+    font-size: 22px;
+}
+.footer-copy-text p {
+    font-size: 14px;
+}
+
+.float-right {
+    float: none !important;
+}
+.hire-me-button {
+    margin-top: 20px;
+    text-align: center;
+}
+.my-second-photo {
+
+    display: none;
+}
+.my-story-photo img {
+   
+    margin: 0px auto;
+    display: block;
+}
+
+.award-tab-list ul.nav-tabs li.nav-item a.nav-link {
+    padding: 13px 26px;
+
+}
+
+.mentor-details {
+    margin-top: 30px;
+}
+.my-story-photo {margin-top: 70px}
+
+.service-item {
+
+    margin-bottom: 30px;
+}
+
+.defult-title h4 {
+    position: relative;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.another-video {
+    position: relative;
+    margin-bottom: 130px;
+}
+.custom-padding {
+    margin-left: 0px;
+}
+.filters ul li.active:last-child::after {
+
+    background-color: transparent;
+
+}
+.filters ul li.active:first-child::after {
+    background-color: transparent;
+}
+.filters ul li {
+    padding: 0;
+    list-style: none;
+    float: left;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 0;
+    cursor: pointer;
+    position: relative;
+    background-color: #ddd;
+    display: block;
+    float: none;
+    padding: 13px 13px;
+}
+.filters ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: 0;
+}
+.filters ul li.active {
+    background-color: #fab702;
+}
+
+.filters ul li.active {
+    color: #333333;
+}
+.single-post-widgets{margin-top: 30px}
+
+.portfolio-item figure {
+
+    margin-bottom: 30px;
+}
+
+.portfolio-details h2 {
+    margin-top: 36px;
+}
+.specilizing-item figure {
+    float: left;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+.author-title3 p {
+    color: #fff !important;
+}
+.main-menu ul.navbar-nav li.nav-item a {
+    padding: 10px 15px;
+}
+
+
+
+.author-hire-resume-btn a.raisa-btn {
+    margin-right: 15px;
+}
+
+.featured-tab-image img {
+    display: block;
+    width: 100%;
+    min-height: auto;
+}
+
+.post-comment-form input{
+    margin-bottom: 20px;
+}
+.post-comment-form textarea {
+    resize: none;
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+.navbar-light .navbar-toggler {
+
+    color: #fab702;
+    border-color: #fab702;
+
+}
+
+#header-banner1 {
+    background: #fff;opacity:1;
+}
+.author-title {
+    padding-left: 10px;
+}
+
+.author-title h1, .author-title3 h1 {
+    color: #fff;
+}
+.author-title, p.author-title3 p {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+.home1-author-photo {
+    display: none;
+}
+.author-info-area {
+    background: url(../images/home-pro.jpg) no-repeat center center;
+    background-size: cover;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-position: 52% 100%;
+}
+.author-info-area3 {
+    background: url(../images/home-pro3.png) no-repeat center center;
+    background-size: cover;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-position: 75% 100%
+}
+.home3-author-photo {
+
+    display: none;
+}
+.author-title span {
+    color: #393939;
+}
+.specilizing-item figure {
+    margin-bottom: 30px;
+}
+#video-right-static {
+    min-height: 500px;
+}
+
+.author-video-section {
+    background: url(../images/author-vedio.png) no-repeat center center;
+    /* background-size: cover; */
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-position: 0% 90%;
+}
+
+.video_button {
+    position: absolute;
+    right: 0;
+    z-index: 33;
+    top: 280px;
+    left: 0;
+}
+.profilepicture {
+
+    left: 0;
+    right: 0;
+}
+.modal.show .modal-dialog {
+    margin-top: 60%;
+}
+div#latest-work .owl-stage-outer {
+    margin-left: 0px
+}
+.no-padding-left {
+    padding-left: 15px;
+}
+.latest-work-item figure .blur {
+    height: 100%;
+    width: 100%;
+
+}
+
+.latest-work-item figure .work-captions {
+width: 100%;
+    height: 100%;
+
+}
+.blog-item figure {
+    margin-bottom: 30px;
+}
+.custom-w {
+    max-width: 100% !important;
+    margin-bottom: 30px;
+    flex: 100%;
+}
+.have-any-project h2 {
+    font-size: 22px;
+}
+.footer-copy-text p {
+    font-size: 14px;
+}
+
+.float-right {
+    float: none !important;
+}
+.hire-me-button {
+    margin-top: 20px;
+    text-align: center;
+}
+.my-second-photo {
+
+    display: none;
+}
+.my-story-photo img {
+   
+    margin: 0px auto;
+    display: block;
+}
+
+.award-tab-list ul.nav-tabs li.nav-item a.nav-link {
+    padding: 13px 32px;
+
+}
+
+.mentor-details {
+    margin-top: 30px;
+}
+.my-story-photo {margin-top: 70px}
+
+.service-item {
+
+    margin-bottom: 30px;
+}
+
+.defult-title h4 {
+    position: relative;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.another-video {
+    position: relative;
+    margin-bottom: 130px;
+}
+.custom-padding {
+    margin-left: 0px;
+}
+.filters ul li.active:last-child::after {
+
+    background-color: transparent;
+
+}
+.filters ul li.active:first-child::after {
+    background-color: transparent;
+}
+.filters ul li {
+    padding: 0;
+    list-style: none;
+    float: left;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 0;
+    cursor: pointer;
+    position: relative;
+    background-color: #ddd;
+    display: block;
+    float: none;
+    padding: 13px 13px;
+}
+.filters ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: 0;
+}
+.filters ul li.active {
+    background-color: #fab702;
+}
+
+.filters ul li.active {
+    color: #333333;
+}
+.single-post-widgets{margin-top: 30px}
+
+.portfolio-item figure {
+
+    margin-bottom: 30px;
+}
+
+.portfolio-details h2 {
+    margin-top: 36px;
+}
+.specilizing-item figure {
+    float: left;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.author-socials {
+    margin-left: 10px;
+}
+.pricing-table {
+    margin-bottom: 40px;
+}
+.featured-tab-para{
+    margin-top: 20px;
+}
+.single-post-detail h2 {
+    font-size: 18px;
+
+}
+
+.comment-area h2, .post-comment-form h2 {
+    font-size: 16px;
+}
+.comment-display h5 {
+    font-size: 14px;
+}
+.author-title3 {
+    padding-left: 10px;
+}
+.author-hire-resume-btn {
+    margin-left: 6px;
+    padding-left: 0px;
+}
+
+nav ul.blog-pagination {
+    margin-left: 20px;
+}
+
+.author-hire-resume-btn a.raisa-btn {
+    margin-right: 15px;
+}
+
+.featured-tab-image img {
+    display: block;
+    width: 100%;
+    min-height: auto;
+}
+
+.post-comment-form input{
+    margin-bottom: 20px;
+}
+.post-comment-form textarea {
+    resize: none;
+    margin-top: 0;
+}
+
+
+
+
+
+}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.navbar-light .navbar-toggler {
+
+    color: #fab702;
+    border-color: #fab702;
+
+}
+
+#header-banner1 {
+    background: #fff;opacity:1;
+}
+.author-title {
+    padding-left: 10px;
+}
+
+.author-title h1, .author-title3 h1 {
+    color: #fff;
+}
+.author-title p {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+.home1-author-photo {
+    display: none;
+}
+.author-info-area {
+    background: url(../images/home-pro.jpg) no-repeat center center;
+    background-size: cover;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-position: 52% 100%;
+}
+.author-info-area3 {
+    background: url(../images/home-pro3.png) no-repeat center center;
+    background-size: cover;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-position: 75% 100%
+}
+.home3-author-photo {
+
+    display: none;
+}
+.author-title span {
+    color: #393939;
+}
+.specilizing-item figure {
+    margin-bottom: 30px;
+}
+#video-right-static {
+    min-height: 500px;
+}
+
+.author-video-section {
+    background: url(../images/author-vedio.png) no-repeat center center;
+    /* background-size: cover; */
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-position: 0% 90%;
+}
+
+.video_button {
+    position: absolute;
+    right: 0;
+    z-index: 33;
+    top: 280px;
+    left: 0;
+}
+.profilepicture {
+
+    left: 0;
+    right: 0;
+}
+.modal.show .modal-dialog {
+    margin-top: 60%;
+}
+div#latest-work .owl-stage-outer {
+    margin-left: 8px;
+}
+.no-padding-left {
+    padding-left: 15px;
+}
+.latest-work-item figure .blur {
+width: 100%;
+    height: 100%;
+
+}
+
+.latest-work-item figure .work-captions {
+width: 100%;
+    height: 100%;
+
+}
+.blog-item figure {
+    margin-bottom: 30px;
+}
+.custom-w {
+    max-width: 100% !important;
+    margin-bottom: 30px;
+    flex: 100%;
+}
+.have-any-project h2 {
+    font-size: 22px;
+}
+.footer-copy-text p {
+    font-size: 14px;
+}
+
+.float-right {
+    float: none !important;
+}
+.hire-me-button {
+    margin-top: 20px;
+    text-align: center;
+}
+.my-second-photo {
+
+    display: none;
+}
+.my-story-photo img {
+   
+    margin: 0px auto;
+    display: block;
+}
+
+.award-tab-list ul.nav-tabs li.nav-item a.nav-link {
+    padding: 13px 26px;
+
+}
+
+.mentor-details {
+    margin-top: 30px;
+}
+.my-story-photo {margin-top: 70px}
+
+.service-item {
+
+    margin-bottom: 30px;
+}
+
+.defult-title h4 {
+    position: relative;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.another-video {
+    position: relative;
+    margin-bottom: 130px;
+}
+.custom-padding {
+    margin-left: 0px;
+}
+.filters ul li.active:last-child::after {
+
+    background-color: transparent;
+
+}
+.filters ul li.active:first-child::after {
+    background-color: transparent;
+}
+.filters ul li {
+    padding: 0;
+    list-style: none;
+    float: left;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 0;
+    cursor: pointer;
+    position: relative;
+    background-color: #ddd;
+    display: block;
+    float: none;
+    padding: 13px 13px;
+}
+.filters ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: 0;
+}
+.filters ul li.active {
+    background-color: #fab702;
+}
+
+.filters ul li.active {
+    color: #333333;
+}
+.single-post-widgets{margin-top: 30px}
+
+.portfolio-item figure {
+
+    margin-bottom: 30px;
+}
+
+.portfolio-details h2 {
+    margin-top: 36px;
+}
+.specilizing-item figure {
+    float: left;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.author-socials {
+    margin-left: 10px;
+}
+.pricing-table {
+    margin-bottom: 40px;
+}
+.featured-tab-para{
+    margin-top: 20px;
+}
+.single-post-detail h2 {
+    font-size: 18px;
+
+}
+
+.comment-area h2, .post-comment-form h2 {
+    font-size: 16px;
+}
+.comment-display h5 {
+    font-size: 14px;
+}
+.author-title3 {
+    padding-left: 10px;
+}
+.author-hire-resume-btn {
+    margin-left: 6px;
+    padding-left: 0px;
+}
+
+nav ul.blog-pagination {
+    margin-left: 20px;
+}
+
+.author-title3 p {
+    color: #fff !important;
+}
+.main-menu ul.navbar-nav li.nav-item a {
+    padding: 10px 15px;
+}
+
+
+
+
+.author-hire-resume-btn a.raisa-btn {
+    margin-right: 15px;
+}
+
+.featured-tab-image img {
+    display: block;
+    width: 100%;
+    min-height: auto;
+}
+
+.post-comment-form input{
+    margin-bottom: 20px;
+}
+.post-comment-form textarea {
+    resize: none;
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+
+}
+
+
+
