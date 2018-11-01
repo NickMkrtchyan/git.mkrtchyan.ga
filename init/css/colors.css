@@ -1,0 +1,88 @@
+/**************************************
+
+    File Name: colors.css
+    Template Name: Initiative
+    Created By: HTML.Design
+    http://themeforest.net/user/wpdestek
+
+**************************************/
+
+.cat-title,
+.team-desc small,
+.btn-primary:hover,
+.btn-primary:focus, 
+.btn-primary.focus,
+.btn-primary.disabled,
+.btn-primary:disabled,
+.btn-primary:active, 
+.btn-primary.active,
+.btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle,
+.show > .btn-primary.dropdown-toggle,
+.process-box:hover .process-end,
+.tagline-message h3 span::after, 
+.normal-box h4::after, 
+.image-box h4::after,
+.widget-title:after,
+.onsale,
+.image-box h4::after,
+.tooltip-inner,
+.post-publish .fa:hover,
+.da-thumbs.classic-portfolio .pitem a div i,
+.page-link,
+.socibox:hover,
+.socibox:focus,
+.dropdown-item.active, .dropdown-item:active,
+.dropdown-item:hover, .dropdown-item:focus,
+mark,
+.pricing-table .btn-dark,
+.bg {
+	opacity: 1;
+	color:#141414;
+  background-color:#e8be07;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: #e8be07;
+}
+::selection {
+    background: #e8be07;
+    /* Safari */
+    color: #141414;
+}
+
+::-moz-selection {
+    background: #e8be07;
+    /* Firefox */
+    color: #141414;
+}
+
+.pricing-table-header h3,
+.notfound h2,
+.classic-portfolio small,
+.shop-desc small.new-price,
+.rating i,
+.page-link:hover,
+.page-link:focus,
+.blog-meta a,
+.process-front i,
+.da-thumbs .pitem a div small,
+.copyrights i,
+.image-box .readmore,
+.menu-right a:hover i,
+.social a:hover i,
+.navbar-nav .nav-link:hover {
+	color:#e8be07 !important;
+}
+.gform .form-control:focus {
+  border-color: #e8be07;
+}
+
+.tooltip.tooltip-top .tooltip-inner::before, .tooltip.bs-tether-element-attached-bottom .tooltip-inner::before {
+  border-top-color: #e8be07;
+}
+
+.tooltip.tooltip-bottom .tooltip-inner::before, .tooltip.bs-tether-element-attached-top .tooltip-inner::before {
+  border-bottom-color: #e8be07;
+}
+
