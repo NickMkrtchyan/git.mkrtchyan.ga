@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<title>Minable Portfolio Template</title>
+<meta charset="UTF-8">
+<meta name="description" content="Minable Portfolio Template">
+<meta name="keywords" content="personal, portfolio">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/colors/purple.css" id="color" />
+
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+    
+    <!-- FAVICON  -->
+    <link rel="shortcut icon" href="img/favico.png">    
+
+	<!-- Font icons -->
+    <link rel="stylesheet" href="icon-fonts/fontawesome-5.0.6/css/fontawesome-all.min.css"/>
+
+	<!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+
+</head>
+<body> 
+
+<!-- Preloader -->
+<div class="preloader">
+    <div class="outer">
+        <div class="inner">
+            <div class="percentage"></div>                          
+        </div>
+    </div>
+</div>
+<!--/Preloader --> 
+
+<div class="wrapper">
+ 
+<!-- HEADER
+================================================== -->  
+<header>        
+    <a href="index.html" class="logo float-left">
+        <img src="img/logo.png" alt="">
+    </a>
+    <div class="nav-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav class="float-right">
+        <ul>
+            <li><a class="pagelink" href="index.html">home</a>
+            </li>
+            <li><a class="pagelink" href="about.html">about</a></li>
+            <li><a class="pagelink" href="portfolio.html">portfolio</a></li>
+            <li><a class="pagelink" href="news.html">news</a>
+                 <ul class="submenu">
+                    <li><a class="pagelink" href="news.html">news list</a></li>
+                    <li><a class="pagelink" href="news-article.html">news Article</a></li>
+                </ul>
+            </li>
+            <li><a class="pagelink active" href="contact.html">contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- CONTACT PAGE
+================================================== -->  
+<section class="page">
+    <div class="container text-center">
+        <div class="page-hero">contact us</div>
+        <h2 class="subtitle">+4900 987 65 4321</h2><br>
+        <h2 class="subtitle">contact@soonlabs.co</h2>
+        <!-- Form -->
+        <div class="form col-lg-8 offset-lg-2 top_120 text-center">
+            <form class="contact-form top_30" method="POST">
+                <div class="row">
+                    <!--Name-->
+                    <div class="col-md-6">
+                        <input id="con_name" name="con_name" class="form-inp requie" type="text" placeholder="Name">
+                    </div>
+                    <!--Email-->
+                    <div class="col-md-6">
+                        <input id="con_email" name="con_email" class="form-inp requie" type="text" placeholder="Email">
+                    </div>
+                    <div class="col-md-12">
+                        <!--Message-->
+                        <textarea name="con_message" id="con_message" class="requie" placeholder="Your Message" rows="8"></textarea>
+                        <button id="con_submit" class="form-btn" type="submit">SEND MESSAGE</button>
+                    </div>
+                </div>
+            </form>
+        </div> <!-- form end -->
+    </div>
+</section>
+
+    <footer>
+        <!-- Social -->
+        <ul class="social float-left">
+            <li><a href="https://facebook.com"><i class="fab fa-facebook-f"></i> </a></li>
+            <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i> </a></li>
+            <li><a href="#"><i class="fab fa-dribbble" aria-hidden="true"></i> </a></li>
+            <li><a href="#"><i class="fab fa-behance" aria-hidden="true"></i> </a></li>
+        </ul>
+        <!-- View Showcase -->
+        <a href="about.html" class="view-port pagelink">About Us</a>
+    </footer>
+
+</div>
+
+<!-- Javascripts -->
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<!-- for color alternatives -->
+<script src="js/jquery.cookie-1.4.1.min.js"></script>
+<script src="js/Demo.js"></script>
+<link rel="stylesheet" href="css/Demo.min.css" />
+
+</body>
+</html>

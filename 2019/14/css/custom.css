@@ -1,0 +1,48 @@
+/*
+*  theme overwrite 
+=================================
+=================================
+=================================*/
+/**! ----- font family ---- **/
+body {
+  font-family: "Aileron", sans-serif, "Aileron", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Aileron", sans-serif;
+}
+
+.blockquote {
+  font-family: "Noto Serif", serif;
+}
+
+/**! ----- colors ---- **/
+.bg-color-primary, .btn--bg-primary, .navbar-sticky--on .btn, .btn--bg-grey:hover, .btn--outline:hover, .btn--outline-thick:hover, .btn-border-hover.btn--color-white:before, .card--focused, .card--outline:hover, .card--outline:focus, .social-lists li a:hover, .media-player-icon--fill-primary, .oval, .slick-active .slick-dots--long, .pagination .page-item.active .page-link {
+  background: #2f5bea;
+}
+
+.color-primary, .hero-content .btn:hover .media-player-icon--fill-grey, .btn--bg-white:hover, .btn--color-primary, .btn--color-primary:hover, .btn--color-dark.btn-text-hover:hover, .btn--outline.btn--color-primary, .btn--outline-thick.btn--color-primary, .btn-text-hover:hover, .card--focused .btn__text, .lang-selector .lang-dropdown__item:focus, .lang-selector .lang-dropdown__item:hover, .icon-rounded .icon, .media-player-icon--fill-grey:hover, .btn:hover .media-player-icon--fill-grey i, .pagination .page-item .page-link:hover, .dropdown-item:focus, .dropdown-item:hover, .dropdown-item.active, .dropdown-item:active, .features--slider-2 .slick-arrow:hover i, .footer-widget ul li a:hover, .footer .nav li a:hover {
+  color: #2f5bea;
+}
+
+[data-theme=dark] .color-primary, [data-theme=dark] .hero-content .btn:hover .media-player-icon--fill-grey, .hero-content .btn:hover [data-theme=dark] .media-player-icon--fill-grey, [data-theme=dark] .btn--bg-white:hover, [data-theme=dark] .btn--color-primary, [data-theme=dark] .btn-text-hover:hover, [data-theme=dark] .card--focused .btn__text, .card--focused [data-theme=dark] .btn__text, [data-theme=dark] .lang-selector .lang-dropdown__item:focus, .lang-selector [data-theme=dark] .lang-dropdown__item:focus, [data-theme=dark] .lang-selector .lang-dropdown__item:hover, .lang-selector [data-theme=dark] .lang-dropdown__item:hover, [data-theme=dark] .icon-rounded .icon, .icon-rounded [data-theme=dark] .icon, [data-theme=dark] .media-player-icon--fill-grey:hover, [data-theme=dark] .btn:hover .media-player-icon--fill-grey i, .btn:hover .media-player-icon--fill-grey [data-theme=dark] i, [data-theme=dark] .pagination .page-item .page-link:hover, .pagination .page-item [data-theme=dark] .page-link:hover, [data-theme=dark] .dropdown-item:focus, [data-theme=dark] .dropdown-item:hover, [data-theme=dark] .dropdown-item.active, [data-theme=dark] .dropdown-item:active, [data-theme=dark] .features--slider-2 .slick-arrow:hover i, .features--slider-2 .slick-arrow:hover [data-theme=dark] i, [data-theme=dark] .footer-widget ul li a:hover, .footer-widget ul li [data-theme=dark] a:hover, [data-theme=dark] .footer .nav li a:hover, .footer .nav li [data-theme=dark] a:hover {
+  color: #2f5bea;
+}
+
+.features .swipe-tab.active-tab .swipe-tab__inner {
+  -webkit-box-shadow: 0px 2px 0px #2f5bea;
+          box-shadow: 0px 2px 0px #2f5bea;
+}
+
+.border-primary, .hr--blod, .btn--color-primary, .btn--color-dark.btn-text-hover:hover, .btn--outline:hover, .btn--outline-thick:hover, .btn-text-hover:hover {
+  border-color: #2f5bea;
+}
+
+/*! Place your custom styles here (below). 
+      This will make it much easier to update the template later - you'll only need to preserve "this file
+  ===================================================================================================*/

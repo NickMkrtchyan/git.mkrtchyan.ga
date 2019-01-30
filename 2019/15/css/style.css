@@ -1,0 +1,1758 @@
+/* --------------------------------- */
+/* Css Styles                        */
+/*---------------------------------- */
+
+/**
+    Minable  - Portfolio Template 
+    Author : Soonlabs
+    Copyright 2019
+
+
+/* Table of Content
+==================================================
+
+    1. Body and Core Css
+    2. Home Page
+    3. About Page
+    4. Portfolio List
+    5. News Page
+    6. Contact Page
+    7. Responsive
+*/
+
+@import url("transition.css");
+@import url("margins.css");
+@import url("reset.css");
+@import url("assets.css");
+
+
+/*------------------------ 1 Body and Core Css ------------------------*/   
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-size: 100%;
+    background: #000;
+}
+
+p{
+    opacity: .7;
+    color: #fff;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.preloader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 1000;
+    text-align: center;
+}
+
+.percentage {
+    z-index: 100;
+    color: #404040;
+    opacity: 1;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 200px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+#wrapper_bgndVideo{
+    z-index: 1 !important;
+}
+
+.inner {
+    display: table-cell;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.outer {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+a:focus{
+    color: #fff;
+}
+
+.little-title{
+    color: #fff;
+    font-size: 37px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.sub-title{
+    color: #fff;
+    line-height: 34px;
+    font-size: 22px;
+    font-weight: 600;  
+}
+
+
+header{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    padding: 40px;
+}
+
+header nav ul li{
+    float: left;
+    text-align: right;
+    position: relative;
+    margin-right: 40px;
+    line-height: 50px;
+}
+
+header nav ul li:last-child{
+    margin-right: 0;
+}
+
+header nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+}
+
+header nav ul li a:hover{
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+}
+
+header .submenu{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    position: absolute;
+    left: 0;
+    min-width: 180px;
+    background: #000;
+    padding: 14px 25px;
+    border-radius: 4px;
+}
+
+header .submenu li{
+    margin-right: 0;
+    float: none;
+    text-align: left;
+    line-height: 39px;
+}
+
+header .submenu li a{
+    font-weight: 500;
+    font-size: 14px;
+    color: #a2a2a2;
+    line-height: 39px;
+    display: block;
+}
+
+header .submenu:after{
+    display: block;
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 9px;
+    border-color: transparent transparent #000;
+}
+
+header nav ul li:hover > .submenu{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+}
+
+
+/* Nav Icon */
+
+.nav-icon{
+    display: none;
+}
+
+
+.nav-icon span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+.nav-icon:hover span:nth-child(3){
+    width: 100%;
+}
+
+.nav-icon span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.nav-icon span:nth-child(2) {
+  top: 7px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.nav-icon span:nth-child(3) {
+  top: 14px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;    
+  width: 60%;
+  right: 0 !important;
+}
+
+/* Full Menu When Open */
+
+.full-open .nav-icon span {
+    width: 85%; 
+}
+
+.full-open:hover span:nth-child(3){
+    width: 85%;
+}
+
+.full-open .nav-icon span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -3px;
+  left: 8px;
+}
+
+.full-open .nav-icon span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.full-open .nav-icon span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 16px;
+  left: 8px;
+}
+
+
+.nav-icon {
+    float: right;
+    width: 30px;
+    height: 18px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+/*------------------------ Home Page ------------------------*/   
+
+
+.home{
+    display: table;
+    width: 100%;
+}
+
+.home-content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    z-index: 2;
+    position: relative;
+    padding: 0 90px;
+}
+
+.home .home-content .title{
+    color: #fff;
+    font-size: 75px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.home .home-content .hello{
+    color: #fff;
+    font-size:50px;
+    font-weight: 700;
+}
+
+.home .home-content hr{
+    border: solid 2px #fff;
+    width: 21px;
+    float: left;
+    margin: 45px 0 0 25px;
+}
+
+.home .social, .home .view-port{
+    padding: 50px;
+    position: absolute;
+    bottom: 0;
+    display: -webkit-box;
+    z-index: 3;
+}
+
+.home .social{    
+    right: 0;
+}
+
+.home .view-port{    
+    left: 0;
+}
+
+.home-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+}
+
+.home.slider .home-content .title span, .home.video .home-content .title span{
+    -webkit-text-stroke: 1px #fff;
+    color: rgba(255, 255, 255, 0) !important;
+}
+/*
+.home.video:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}*/
+
+footer{
+    padding-top: 90px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer .social, footer .view-port{
+    padding: 50px;
+    position: absolute;
+    bottom: 0;
+    display: -webkit-box;
+    z-index: 3;
+}
+
+footer .social{    
+    right: 0;
+}
+
+footer .view-port{    
+    left: 0;
+}
+
+
+
+
+.social li a {
+    color: #fff;
+    text-decoration: none;
+    float: left;
+    width: 50px;
+    display: block;
+    text-align: right;
+}
+
+
+.social li {
+    list-style: none;
+}
+
+.social li a:hover i{
+    transform: rotate(360deg);
+    transition: transform ease 0.3s;
+    -webkit-transition: transform ease 0.3s;
+    -moz-transition: transform ease 0.3s;
+}
+
+.view-port{
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.view-port:hover{
+    transition: transform ease 0.3s;
+    -webkit-transition: transform ease 0.3s;
+    -moz-transition: transform ease 0.3s;
+}
+
+.view-port:before{
+    content: "\f309";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: bold;
+    right: 0;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 15px;
+    font-size: 19px;    
+    transform: translateY(48px);
+    -webkit-transform: translateY(48px);
+    -moz-transform: translateY(48px);
+    opacity: 0;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+}
+
+.view-port:hover:before{
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+}
+
+
+/*------------------------ 3. About Page ------------------------*/   
+
+.page{
+    padding-bottom: 90px;
+}
+
+.page-hero{
+    padding: 240px 0 60px;
+    font-size: 80px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.page-hero:before{
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 1px;
+    height: 70px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 140px;
+}
+
+.about-sub{
+    font-size: 36px;
+    line-height: 48px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.about p{
+    color: #fff;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+}
+
+.clients{
+    background: #000;
+    -webkit-box-shadow: 0px 50px 70px -40px rgba(0,0,0,0.95);
+    box-shadow: 0px 50px 70px -40px rgba(0,0,0,0.95);
+}
+
+.clients .client img{
+    width: 100%;
+    opacity: .5;
+}
+
+.clients .client {
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 36px 0;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s; 
+}
+
+.clients .client:hover img {
+    opacity: 1;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;    
+}
+
+.wwd{
+    padding: 0 4%;
+}
+
+.wwd .service {    
+    padding: 60px 0;
+}
+
+.wwd .service i{
+    color: #fff;
+    font-size: 30px;
+}
+
+.wwd .service .title{
+    color: #fff;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/*------------------------ 4. Portfolio List ------------------------*/   
+
+
+.portdet{
+    position: relative;
+    width: 100%;
+    left: 0;
+    display: inline-block;
+    padding-bottom: 30px;   
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+}
+
+.portdet:hover{
+    padding-bottom: 0px;
+    padding-top: 60px;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+}
+
+.portdet .title:after{
+    content: '';
+    width: 30px;
+    height: 45px;
+    background: #6f6f6f;
+    position: absolute;
+    left: 71px;
+    margin-top: 105px;
+}
+
+.portdet:hover .title:after{
+    visibility: hidden;
+}
+
+.portdet img{
+    width: 100%;
+    opacity: 0;
+    float: left;
+    transform: scale(.1);
+}
+
+.portdet figure{
+    height: 270px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+}  
+
+.portdet figure img{
+    position: absolute;
+    top: 0;
+    left: 0;
+} 
+
+.portdet:hover figure{
+    height: 360px;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+}
+
+.portdet figure figcaption{
+    position: absolute;
+    padding: 120px 70px;    
+    width: 100%;
+    text-align: left;
+}
+
+.portdet figure figcaption .title{
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.portdet:hover figure figcaption .title{
+    transition: all ease 0.5s 0.2s;
+    -webkit-transition: all ease 0.5s 0.2s;
+    -moz-transition: all ease 0.5s 0.2s;
+}
+
+.portdet figure figcaption span{
+    visibility: hidden;
+    transform: translateY(30px);
+    margin: 15px 0;
+    display: inline-block;
+    padding: 0;
+    float: left;
+    color: #fff;
+}
+
+.portdet:hover > figure figcaption span{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition: all ease 0.5s 0.2s;
+    -webkit-transition: all ease 0.5s 0.2s;
+    -moz-transition: all ease 0.5s 0.2s;
+}
+
+.portdet figure figcaption span:after{
+    margin-left: 10px;
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
+    content: "\f30b";
+    font-size: 12px;
+    color: #fff;
+    opacity: .6;
+}
+
+.portdet:hover > figure img{
+    opacity: 1;
+    transform: scale(1.0);
+    transition: all ease 0.3s;
+}
+
+.portdet.bu img{
+    transform: scale(1.0);}
+
+.cover-image{
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.cover-image:after{
+    content: '';
+    width: 100%;
+    height: 51%;
+    position: absolute;
+    bottom: 0;
+}
+
+.cover-image img{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.wrapper{
+    position: absolute;
+    width: 100%;
+    background: url(../img/bg.jpg);
+    background-size: cover;
+}
+
+.wrapper.change-in{
+    position: absolute;
+    width: 100%;
+}
+
+.portwrap{
+    min-height: 1860px;
+}
+
+/* Single Portfolio */
+
+.single-port{
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 120px;
+    padding-bottom: 90px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.70);
+}
+
+.cover-image{
+    position: relative;
+}
+
+.port-close{
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    opacity: .6;
+    z-index: 10;
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+}
+
+.port-close:hover{
+    opacity: 1;
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+}
+
+.port-close:before, .port-close:after{
+    content: '';
+    width: 2px;
+    height: 26px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+
+}
+
+.port-close:before{
+    transform: rotate(135deg);
+}
+
+.port-close:after{
+    transform: rotate(-135deg);
+}
+
+.port-title{
+    width: 100%;
+    text-align: center;
+}
+
+.port-title .title{
+    font-size: 74px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.port-title p{
+    font-size: 18px;
+    opacity: .5;
+    color: #fff;
+    line-height: 30px;
+}
+
+.portcont .image img{
+    width: 100%;  
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+}
+
+.portcont .image{
+    overflow: hidden;
+}
+
+.portcont:hover .image.dark img{
+    transform: scale(1.1);
+    -webkit-filter: grayscale(0%); 
+    filter: grayscale(0%); 
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;   
+}
+
+.portcont:hover .text .title{
+    transform: translateX(30px);
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s; 
+}
+
+.portcont:hover .text p{
+    transform: translateX(30px);
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s; 
+}
+
+.portcont .text{
+    z-index: 1;
+    position: relative;
+}
+
+.portcont .text .title{
+    font-size: 68px;
+    font-weight: 700;
+    width: 150%;
+    letter-spacing: -1px;
+    transform: translateX(-90px);
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s; 
+}
+
+.portcont .text p{
+    margin-top: 15px;
+    transform: translateX(60px);
+    line-height: 30px;
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s; 
+}
+
+.portcont.left .text .title{
+    transform: translateX(90px);
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s; 
+}
+
+.portcont.left .text p{
+    transform: translateX(0);
+    line-height: 30px;
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s; 
+}
+
+.portcont.left:hover .text .title, .portcont.left:hover .text p{
+    transform: translateX(30px);
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;     
+}
+
+.lightbox{
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+}
+
+.portcont:hover .image.dark{
+    -webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);      
+}
+
+.lightbox:hover img{ 
+    transform: scale(1.1); 
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;     
+}
+
+.lightbox img{
+    width: 100%;
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s; 
+}
+
+.dark:hover{
+    -webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);  
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;       
+}
+
+.dark{
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);        
+}
+
+.lightbox{
+    overflow: hidden;
+}
+
+
+.next-link {
+    text-decoration: none;
+    overflow: hidden;
+    height: 54px;
+    display: inline-block;
+}
+
+.next-link .nav-title {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.next-link .next-title {
+    color: #fff;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.next-link .next-title,
+.next-link .nav-title {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transition: all ease 0.2s;
+    -webkit-transition: all ease 0.2s;
+}
+
+.next-link:hover .next-title,
+.next-link:hover .nav-title {
+    transform: translateY(-130%);
+    -webkit-transform: translateY(-130%);
+    transition: all ease 0.2s;
+    -webkit-transition: all ease 0.2s;
+}
+
+.information {
+    margin-left:auto;
+    margin-right: auto;
+    float: none;
+    display: inline-block;
+    padding: 0;
+    width: auto;
+}
+
+.information li {
+    float: left;
+    list-style: none;
+    margin-right: 35px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.information li:last-child{
+    margin-right: 0;
+}
+
+.information li span {
+    font-weight: 600;
+    color: #fff;
+}
+
+.outter{
+    display: table;
+}
+
+.cover-image .cover-inner{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: table;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.cover-image .cover-inner .port-title{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.cover-image .port-title p{
+    opacity: 1;
+}
+
+.cover-image .port-title .title{
+    color: #fff !important;
+}
+
+
+/*------------------------ 5. News Page ------------------------*/
+
+.anews{
+    display: block;
+    margin-top: 45px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.anews figure img{
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity ease 0.2s;
+    -webkit-transition: opacity ease 0.2s;
+    -moz-transition: opacity ease 0.2s;
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+
+.anews figure {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+
+.anews figure figcaption .title{
+    color: #fff;
+    font-size: 37px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 53px;
+}
+
+.anews figure figcaption .date{
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 14px;
+    display: block;
+}
+
+.anews figure figcaption{
+    position: absolute;
+    top: 0;
+    text-align: left;
+    padding: 0px 45px;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+}
+
+/* News Hover */
+
+.anews:hover{    
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+}
+
+.anews:hover > figure img{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity ease 0.5s 0.3s;
+    -webkit-transition: opacity ease 0.5s 0.3s;
+    -moz-transition: opacity ease 0.5s 0.3s;    
+    -webkit-transition: top ease 0.4s;
+}
+
+.anews:hover > figure figcaption {
+    padding: 80px 45px;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+}
+
+.anews:hover > figure {
+    height: 300px;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+}
+
+.article-image{
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.article-image img{
+    width: 100%;
+}
+
+.blog-categories {
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.blog-categories a {
+    margin-right: 5px;
+}
+
+.blog-title {
+    font-size: 35px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.blog-info {
+    color: #fff;
+    font-size: 12px;
+    display: block;
+    margin-top: 20px;
+}
+
+blockquote {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 500;
+    font-style: italic;
+    padding: 30px;
+    line-height: 40px;
+}
+
+/*Comments*/
+
+.article-comments .comment {    
+    border-bottom: solid 1px #383838;
+    padding-bottom: 30px;
+}
+
+.article-comments .comment figure img {
+    width: 100%;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+
+.article-comments .comment-content .title {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.article-comments .comment-content .date {
+    color: #505050;
+    font-size: 12px;
+}
+
+.article-comments .comment-content p {
+    color: #818080;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.article-comments .comment-content .reply {
+    font-size: 12px;
+    color: #fff;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.article-comments .comment-content .reply:before {
+    content: "\f3e5";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: bold;
+    margin-right: 7px;
+    font-size: 10.5px;
+}
+
+.article-comments .comment:last-child {
+    border: none;
+}
+
+.article-comments .comment.reply {
+    padding-left: 30px;
+}
+
+/* sidebar */
+
+.widget-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.recent-post ul li {
+    list-style: none;
+}
+
+.recent-post ul li a {
+    border-bottom: 1px solid #2d2d2d;
+    width: 100%;
+    display: block;
+    padding: 15px 0;
+    transition: all ease 0.3s;
+}
+
+.recent-post ul li:last-child a{
+    border: none;
+}
+
+.recent-post .title {
+    font-size: 14px;
+    line-height: 20px;
+    color: #989898;
+}
+
+.recent-post ul li span {
+    color: #b8b8b8;
+    font-size: 12px;
+}
+
+.categories ul li {
+    list-style: none;
+}
+
+.categories ul li a {
+    color: #9a9a9a;
+    font-size: 14px;
+    padding: 10px 0;
+    border-bottom: 1px solid #2d2d2d;
+    display: block;
+    transition: all ease 0.3s;
+}
+
+
+.categories ul li:last-child a{
+    border: none;
+}
+
+.sidebar{
+    display: inline-table;
+    background: #000;
+    padding: 30px;
+}
+
+.blog-article{
+    padding-right: 40px;
+}
+
+
+
+/*------------------------ 6. Contact ------------------------*/   
+
+.subtitle{
+    font-size: 26px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.form-inp {
+    width: 100%;
+    height: 45px;
+    border: 0;
+    color: #fff;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.4);
+    font-size: 13px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    background: none;
+}
+
+.contact-form textarea {
+    width: 100%;
+    border: 0;
+    color: #fff;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.4);
+    font-size: 13px;
+    padding: 20px 0 0 10px;
+    height: 119px;
+    margin-bottom: 15px;
+    background: none;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+}
+
+.form-inp:focus {
+    border-bottom: solid 1px #fff !important;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+}
+
+.contact-form textarea:focus {
+    border-bottom: solid 1px #fff !important;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+}
+
+.form-btn {
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    transition: all ease 0.4s;
+    -webkit-transition: all ease 0.4s;
+    -moz-transition: all ease 0.4s;
+    margin: 60px auto 0;
+    display: block;
+    cursor: pointer;
+}
+
+.form-btn:hover{
+    opacity: .8;
+}
+
+.form-title{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 600;text-align: center;
+
+}
+
+.form{
+    margin-bottom: 180px;
+}
+
+
+
+/*------------------------ 7. Responsive ------------------------*/   
+
+@media only screen and (min-width: 1201px) {
+
+/*    .container {
+        width: 90%;
+        margin-left: 5%;
+    }*/
+
+ }
+
+
+@media only screen and (min-width: 768px) {
+    header nav{
+        display: block !important;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    header nav ul li {
+        margin-right: 26px;
+    }
+
+    .home .home-content .title {
+        font-size: 60px;
+    }
+
+}
+/* Max Width 991 */
+
+@media only screen and (max-width: 991px) {
+
+   .home .home-content .title {
+        font-size: 56px;
+    }
+
+    .clients .client {
+        padding: 0px 0;
+    }
+
+    .page-hero {
+        font-size: 70px;
+    }
+
+    .about-sub {
+        font-size: 32px;
+    }
+
+    .page-hero {
+        padding: 236px 0 30px;
+    }
+
+    .portdet img {
+    opacity: 1;
+    top: 0 !important;
+    transform: scale(1);
+}
+
+    .portdet figure{
+    height: 360px;
+    }
+
+    .portdet figure figcaption span {
+        visibility: visible;
+        transform: translateY(0px);
+    }
+
+    .portdet{
+        padding: 0 0 60px !important;
+    }
+
+    .portdet .title:after{
+        visibility: hidden;
+    }
+
+    .portdet figure figcaption .title {
+        font-size: 45px;
+    }
+
+    .anews figure img{
+        display: none;
+    }
+
+    .anews figure {
+        height: 240px !important;
+    }
+
+    .anews figure figcaption {
+        padding: 0px 45px !important;
+    }
+
+    .anews figure figcaption .title {
+        font-size: 30px;
+        line-height: 47px;
+    }
+
+    .blog-title {
+        font-size: 30px;
+        line-height: 46px;
+    }
+
+    .portcont .text .title, .portcont .text p{
+        transform: translateX(0px) !important;
+    }
+
+    .portcont .text .title{
+        width: auto;
+    }
+
+    .portcont{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portcont .image{
+        order:1;
+    }
+
+    .portcont .text{
+        order:2;
+    }
+
+    .lightbox {
+        margin-bottom: 30px;
+        display: block;
+    }
+
+    .port-title .title {
+        font-size: 60px;
+    }
+
+}
+
+
+/* Max Width 767 */
+
+@media only screen and (max-width: 767px) {
+
+    .home .home-content .title {
+        font-size: 45px;
+    }
+
+    .home .home-content .hello {
+        font-size: 36px;
+    }
+
+    .view-port {
+        color: #fff;
+        font-weight: 600;
+        font-size: 17px;
+    }
+
+    .about-sub {
+        font-size: 28px;
+        line-height: 45px;
+    }
+
+    .page-hero {
+        padding: 236px 0 20px;
+    }
+
+    .home-content {
+        padding: 0 30px;
+    }
+
+    .home .social, .home .view-port {
+        padding: 30px;
+    }
+
+    header nav ul li {
+        float: none;
+    }
+
+    header nav ul li {
+        margin-right: 0;
+    }
+
+    .submenu{
+        position: relative;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    header .submenu li a {
+        text-align: right;
+    }
+
+    header .submenu{
+        position: relative;
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+    }
+
+    nav{
+        display: none;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        padding: 45px;
+        text-align: center;
+        background: #000;    
+        top: 70px;
+    }
+
+    header nav ul li, header .submenu li a {
+        text-align: center;
+    }
+
+    header .submenu{
+        padding: 0;
+    }
+
+    nav {
+        padding: 15px;
+    }
+
+    header nav ul li{
+        line-height: 40px;
+    }
+    header .submenu li a {
+        line-height: 34px;
+    }
+
+    .nav-icon{
+        display: block;
+    }
+
+    header .logo{    
+        margin-top: 0px;
+    }
+
+    .comment.reply {
+    padding-left: 0 !important;
+}
+
+    .comment figure img {
+        display: none;
+    }
+
+    .portdet figure figcaption .title {
+        font-size: 28px;
+    }
+
+    .anews figure figcaption .title {
+        font-size: 25px;
+        line-height: 42px;
+    }
+
+    .anews figure {
+        height: 200px !important;
+    }
+
+    .blog-title {
+        font-size: 26px;
+        line-height: 42px;
+    }
+
+    .subtitle {
+        font-size: 24px;
+    }
+
+    .portcont .text {
+        text-align: center;
+    }
+
+    .portcont .text .title {
+        font-size: 50px;
+    }
+
+    .portcont .text .title.top_90, .row.portcont.left.top_120.bottom_120, .row.portcont.top_120{
+        margin-top: 45px;
+    }
+
+    .next-link.pagelink.top_120.bottom_90{
+        margin-top: 60px;
+    }
+
+    .next-link .nav-title {
+        font-size: 30px;
+    }
+
+    .next-link .next-title, .next-link .nav-title {
+        transform: translateY(0) !important;
+        -webkit-transform: translateY(0) !important;
+    }
+
+    .port-title .title {
+        font-size: 60px;
+    }
+
+    .information li {
+        float: none;
+        line-height: 27px;
+    }
+
+    .port-title .title {
+        font-size: 50px;
+        margin-bottom: 0;
+    }
+
+    .view-port:before {
+        content: "";
+    }
+
+    .view-port{
+        color: #fff !important;
+    }
+
+    .portwrap {
+        min-height: auto;
+    }
+
+}
+
+
+/*max Width 576px */
+
+@media screen and (max-width: 576px) {
+
+    .page-hero {
+        font-size: 50px;
+    }
+    .about-sub {
+    font-size: 25px;
+    line-height: 41px;
+    }
+
+    .about p {
+        font-size: 18px;
+    }
+
+    .home .home-content .title {
+        font-size: 30px;
+    }
+
+    .home .home-content .hello {
+        font-size: 22px;
+        line-height: 46px;
+    }
+
+    .home .home-content hr {
+        border: solid 2px #fff;
+        width: 20px;
+        float: left;
+        margin: 32px 0 0 5px;
+    }
+
+    .social li a {
+        width: 40px;
+    }
+
+    .portdet figure {
+        height: 280px !important;
+    }
+
+    .portdet figure figcaption {
+        padding: 98px 70px;
+    }
+
+    .portdet figure figcaption span {
+        font-size: 13px;
+    }
+
+    .anews figure figcaption .title {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .anews figure {
+        height: 160px !important;
+    }
+
+    figure {
+        margin: 0 0 0;
+    }
+
+    .anews figure figcaption .date {
+        font-size: 13px;
+    }
+
+    .blog-title {
+        font-size: 22px;
+        line-height: 36px;
+    }
+
+    .form-title {
+        font-size: 26px;
+    }
+
+    .port-title .title {
+        font-size: 40px;
+    }
+
+    .portcont .text .title {
+        font-size: 32px;
+    }
+
+    .little-title {
+        font-size: 32px;
+    }
+
+    header {
+        padding: 25px;
+    }
+
+    .social, .view-port {
+        padding: 0 25px 25px !important;
+        margin: 0;
+    }
+
+    .view-port {
+        font-size: 15px;
+    }
+
+    .demo{
+        display: none;
+    }
+
+    .page-hero:before {
+        height: 50px;
+        top: 120px;
+    }
+
+    .page-hero {
+        padding: 206px 0 25px;
+        font-size: 45px;
+    }
+
+    .percentage {
+        font-size: 80px;
+    }
+
+    .portdet {
+        padding:0 !important;
+    }
+
+
+}
+

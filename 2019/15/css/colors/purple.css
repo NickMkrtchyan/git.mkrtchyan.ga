@@ -1,0 +1,7 @@
+.home .home-content .title span, .social li a:hover, .view-port:hover, header nav ul li a:hover, .portdet:hover figure figcaption .title, .port-title .title, .portcont .text .title, .next-title, .blog-categories a, header nav ul li a.active, .anews figure figcaption .date{
+    color: #8f36cd !important;
+}
+
+#loading-bar, .form-btn {
+  background-color: #8f36cd;
+ }

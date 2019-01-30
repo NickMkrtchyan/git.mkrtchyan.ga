@@ -1,0 +1,92 @@
+
+
+@keyframes next-movein {
+		0%   {transform: translate3d(0,100%,0);}
+      50%  {transform: translate3d(0,100%,0);}
+      100% {transform: translate3d(0,0,0);}
+}
+
+@keyframes next-moveout {
+      0%   {transform: translate3d(0,0,0);}
+      50%  {transform: translate3d(0,0,0);}
+      100% {transform: translate3d(0,-100%,0);}
+}
+
+.is-movein, .is-moveout {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.is-movein {
+    animation: next-movein 2s cubic-bezier(0.87, 0.04, 0.27, 0.99);
+}
+
+.is-moveout {
+    animation: next-moveout 2s cubic-bezier(0.87, 0.04, 0.27, 0.99);
+    animation-fill-mode: forwards;
+}
+
+/* Portfolio Transition */
+
+@keyframes portfolio-out{
+  0% {opacity: 1;}
+  100% { opacity: 0;transform: scale(1.5); }
+}
+
+
+@keyframes portfolio-in{
+  0% {transform: scale(.5); opacity: 0.4;}
+  100% {transform: scale(1); opacity: 1; }
+}
+
+@keyframes portpage-in{
+  0% { opacity: 0;}
+  30% {opacity: .8; }
+  100% {opacity: 1; }
+}
+
+
+.change .portdet.bu img{
+    animation: portfolio-out .3s cubic-bezier(0.87, 0.04, 0.27, 0.99);  
+    animation-fill-mode: forwards;    
+}
+
+
+.change-in .single-port .cover-image img{
+    animation: portfolio-in .8s cubic-bezier(0.87, 0.04, 0.27, 0.99);  
+}
+
+.change-in{
+    animation: portpage-in 2s cubic-bezier(0.87, 0.04, 0.27, 0.99);  
+}
+
+
+/* Loading Bar */
+
+#loading-bar {
+  height: 4px;
+  width: 0;
+  position: fixed;
+  z-index: 666000666;
+  -webkit-transition:width 500ms ease-out, height 500ms ease-out;
+  -moz-transition:width 500ms ease-out, height 500ms ease-out;
+  -o-transition:width 500ms ease-out, height 500ms ease-out;
+  transition:width 500ms ease-out, height 500ms ease-out;
+}
+
+#loading-bar.no-transition { 
+  -webkit-transition:none;
+  -moz-transition:none;
+  -o-transition:none;
+  transition:none;
+}
+
+#loading-bar.top, #loading-bar.bottom, #loading-bar.left { left: 0;}
+#loading-bar.top, #loading-bar.left, #loading-bar.right { top: 0;}
+#loading-bar.left, #loading-bar.right { width: 5px; height: 0; }
+#loading-bar.bottom { bottom: 0; }
+#loading-bar.right { right:0; }
+
+
